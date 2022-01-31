@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>SVG</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>SVG</h1>
+					<h3>Scaleble vector graphics</h3>
+				</section>
+				<section>
+					<h2>SVG Advantages</h2>
+					<ul>
+						<li>Resolution Independent
+						</li>
+						<li>Reducing HTTP Request</li>
+						<li>Can be animated and Edited</li>
+						<li>Smaller File Size</li>
+					</ul>
+				</section>
+				<section>
+					<h2>How to start?</h2>
+					<ol>
+						<li>Insert svg tay into your html document
+							<pre><code><svg></svg></code></pre>
+						</li>
+						<li>Specify the size of your svg with without height
+							<pre><code><svg width="100px" height="100px"></svg></code></pre>
+						</li>
+						<li>Insert some shapes into your svg
+							<pre><code><svg width="100px" height="100px">
+	<circle cx="10" cy="10" r="5"></circle>
+	<rect x="5" y="7" width="10" height="10"></rect>
+</svg>
+							</code>
+							</pre>
+						</li>
+					</ol>
+				</section>
+				<section>
+					<h2>Basic SVG Shapes</h2>	
+					<ul>
+						<li>Circle
+						</li>
+						<li>Rectangle</li>
+						<li>Ellipse</li>
+						<li>Line</li>
+						<li>Polygon</li>
+						<li>Polyline</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Circle</h2>	
+					<img src="https://raw.githubusercontent.com/Yauheny-Bychkou/Image-svg/ce6c791326f9aa1e2bd2fc93b6dd38b6db795af1/circle.svg" alt="">
+					<pre><code><circle cx="10%" cy="12%" r="7%" /></code></pre>
+				</section>
+				<section>
+					<h2>Rectangle</h2>	
+					<img src="https://raw.githubusercontent.com/Yauheny-Bychkou/Image-svg/ce6c791326f9aa1e2bd2fc93b6dd38b6db795af1/rectangle.svg" alt="">
+					<pre><code><rect x="3%" y="24%" width="16%" height="14%" /></code></pre>
+				</section>
+				<section>
+					<h2>Ellipse</h2>	
+					<img src="https://raw.githubusercontent.com/Yauheny-Bychkou/Image-svg/ce6c791326f9aa1e2bd2fc93b6dd38b6db795af1/ellipse.svg" alt="">
+					<pre><code><ellipse cx="200" cy="80" rx="100" ry="50" /></code></pre>
+				</section>
+				<section>
+					<h2>Line</h2>	
+					<img src="https://raw.githubusercontent.com/Yauheny-Bychkou/Image-svg/ce6c791326f9aa1e2bd2fc93b6dd38b6db795af1/line.svg" alt="">
+					<pre><code><line x1="0" y1="0" x2="200" y2="200" /></code></pre>
+				</section>
+				<section>
+					<h2>Polygon</h2>	
+					<img src="https://raw.githubusercontent.com/Yauheny-Bychkou/Image-svg/c36ce7e24d08d63fe6d6e80f0fe5881fe9f8c659/polygon.svg" alt="">
+					<pre><code><polygon points="200,10 250,190 160,210" style="fill:lime;stroke:purple;stroke-width:1" /></code></pre>
+				</section>
+					<section>
+					<h2>Polyline</h2>	
+					<img src="https://raw.githubusercontent.com/Yauheny-Bychkou/Image-svg/c36ce7e24d08d63fe6d6e80f0fe5881fe9f8c659/polyline.svg" alt="">
+					<pre><code><polyline points="0,40 40,40 40,80 80,80 80,120 120,120 120,160" /></code></pre>
+				</section>
+				<section>
+					<h2>Path</h2>	
+					<img style="margin: 0;" src="https://raw.githubusercontent.com/Yauheny-Bychkou/Image-svg/5b2be6675166ea3181b0e5f99b611f3b23d3e788/path.svg" alt="">
+					<pre><code><path points="M20,60 C20,-50 920,250 920,60 C920-50 20,250 20,60 z"/></code></pre>
+					<p style="margin: 0;">d - attribute containing commands:</p>	
+					<ul>
+						<li>M - Move To</li>
+						<li>L - Line To</li>
+						<li>H - Horizontal Line</li>
+						<li>V- Vertical line</li>
+						<li>C - Cubic Bezier</li>
+						<li>Z - Straight Line To Point 0</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Vital Attributes</h2>	
+					<img src="https://raw.githubusercontent.com/Yauheny-Bychkou/Image-svg/5b2be6675166ea3181b0e5f99b611f3b23d3e788/vital.svg" alt="">
+					<p>fill="purple"</p>
+					<p>stroke="black"</p>
+					<p>stroke-width="3"</p>
+				</section>
+				<section>
+					<h2>Browser Support</h2>	
+					<img src="https://raw.githubusercontent.com/Yauheny-Bychkou/Image-svg/5b2be6675166ea3181b0e5f99b611f3b23d3e788/support.svg" alt="">
+				</section>
+				<section>
+					<h2>Thank you for your attention!</h2>	
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
